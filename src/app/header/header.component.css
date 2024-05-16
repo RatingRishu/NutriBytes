@@ -1,0 +1,198 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: 'nunito sans' 'sans-serif';
+  width: 100%;
+  height: 100%;
+  background-color: #2a2734;
+}
+/* input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px #9a86fd;
+  outline: none;
+  border-radius: 35px;
+  transition: all 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 #9a86fd;
+
+     
+}
+input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+input:focus::placeholder {
+  opacity: 1;
+}
+input:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 #ffb370;
+}
+input:focus,input:not(:placeholder-shown) {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 #122731;
+} */
+
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(197, 8, 8);
+font-size: 16px;
+background: transparent;
+width: 25px;
+height: 25px;
+padding: 10px;
+border: solid 3px #474747;
+outline: none;
+border-radius: 35px;
+margin-left: 35%;
+margin-top: 8px;
+transition: all 0.5s;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10 6px 20px 0 #1010a5; */
+
+.hero {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  color: #ff9900;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+.hero-buttons .btn {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.hero-image {
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.dish-details {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.dish-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dish-info h3 {
+  font-size: 1.5em;
+}
+
+.rating span {
+  color: gold;
+  font-size: 1.2em;
+}
+
+.chef-info {
+  display: flex;
+  align-items: center;
+}
+
+.chef-info img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  color: #666;
+}
