@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { ProductsComponent } from './products/products.component';
+import { RecipesListComponent } from './recipes-list/recipes-list.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductsComponent
+    ProductsComponent,
+    RecipesListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
