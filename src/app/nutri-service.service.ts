@@ -10,6 +10,7 @@ export class NutriServiceService {
   nutriAppId = '8180ba89'
   nutriAppKey = 'dd30b960687f4723a19afb953491550b'
   nutriType = 'cooking'
+  // nutriType = 'logging'
   // ingredient = 'rice'
 
   // Food analysis api details
