@@ -26,12 +26,13 @@
         <p>$10.00</p>
         <button class="btn">Add to Cart</button>
       </div>
-      <p class="description">Lorem ipsum dolor shit amet...</p>
+      <p class="description">
+        It provides highly precise and detailed information regarding the protein content offered by particular foods.</p>
     </div>
   </div>
 </section>
 <div *ngIf="foodData">
-  <h1>Food Information</h1>
+  <h1>Food Information for -: {{ query | uppercase }}</h1>
   <div class="card-container">
     <div *ngFor="let item of foodData.hints" class="card">
       <img [src]="item.food.image ? item.food.image : '../../assets/img/logo.png'" alt="Loading...."
