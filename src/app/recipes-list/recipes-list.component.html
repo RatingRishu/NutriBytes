@@ -1,37 +1,3 @@
-<!-- 
-<div>
-  <input [(ngModel)]="query" placeholder="Search for food items" />
-  <button (click)="fetchFoodData()">Search</button>
-</div>
-
-<div *ngIf="foodData">
-  <h1>Food Information</h1>
-  <div class="card-container">
-    <div *ngFor="let item of foodData.hints" class="card">
-      <img [src]="item.food.image" alt="{{ item.food.label }}" class="card__image">
-      <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-            <path />
-          </svg>
-          <div class="wrap">
-            <h2>{{ item.food.label }}</h2>
-            <p>Known As: {{ item.food.knownAs }}</p>
-            <p>Category: {{ item.food.category }}</p>
-            <p>Calories: {{ item.food.nutrients.ENERC_KCAL }}</p>
-            <p>Protein: {{ item.food.nutrients.PROCNT }}</p>
-            <p>Fat: {{ item.food.nutrients.FAT }}</p>
-            <p>Carbs: {{ item.food.nutrients.CHOCDF }}</p>
-            <p>Fiber: {{ item.food.nutrients.FIBTG }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-
 <div class="sample">
   <div class="search-container">
     <input [(ngModel)]="query" placeholder="Search for food items" class="search-input" />
