@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import { NutriServiceService } from '../nutri-service.service';
 
 @Component({
@@ -6,29 +6,26 @@ import { NutriServiceService } from '../nutri-service.service';
   templateUrl: './recipes-list.component.html',
   styleUrls: ['./recipes-list.component.css']
 })
-export class RecipesListComponent {
+export class RecipesListComponent implements OnInit, OnChanges{
   ingredientFoodData : any = 'paneer'
   ingredientData : any = ['200 gram paneer','1 cup rice']
 
   foodData : any;
   foodItemData : any;
+  query: string = '';
+  @Input() item: string = '';
 
-  query: string = ''; 
+  constructor(private nutriService: NutriServiceService) {}
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['item'] && changes['item'].currentValue) {
+      this.query = this.item;
+      this.fetchFoodData();
+    }
+  }
 
-
-  constructor(private nutriService: NutriServiceService) {
-
-    // this.nutriService.getNutriData(this.ingredientData).subscribe(data => {
-    //   console.log(data);
-    // });
-
-    // this.nutriService.getFoodData(this.ingredientFoodData).subscribe(data => {
-    //   this.foodData = data;
-    //   console.log(this.foodData);
-    //   this.foodItemData = this.foodData.parsed[0];
-    //   console.log(this.foodItemData.label);
-    // });
+  ngOnInit(): void {
+      
   }
 
   fetchFoodData(): void {
@@ -38,4 +35,6 @@ export class RecipesListComponent {
       });
     }
   }
+
+  
 }

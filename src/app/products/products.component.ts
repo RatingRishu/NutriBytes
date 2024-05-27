@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NutriServiceService } from '../nutri-service.service';
 
 @Component({
@@ -13,9 +13,11 @@ export class ProductsComponent {
 
   foodData : any;
   foodItemData : any;
-
   query: string = ''; 
-
+  paneer: string = 'paneer';
+  rice: string = 'rice';
+  potatoChips: string = 'potato chips';
+  starbucks: string = 'Starbucks';
 
 
   constructor(private nutriService: NutriServiceService) {
@@ -32,12 +34,17 @@ export class ProductsComponent {
     // });
   }
 
-  fetchFoodData(): void {
-    if (this.query.trim()) { // Ensure the query is not empty
-      this.nutriService.getFoodData(this.query).subscribe(data => {
-        this.foodData = data;
-      });
-    }
+  // fetchFoodData(): void {
+  //   if (this.query.trim()) { // Ensure the query is not empty
+  //     this.nutriService.getFoodData(this.query).subscribe(data => {
+  //       this.foodData = data;
+  //     });
+  //   }
+  // }
+
+  onView(item:any) {
+    this.foodItemData = item;
+    console.log(this.foodItemData);
   }
 
 }
