@@ -130,3 +130,68 @@ body {
 .wrap p {
   margin: 5px 0;
 }
+
+.dish-details {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.dish-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dish-info h3 {
+  font-size: 1.5em;
+}
+
+.rating span {
+  color: gold;
+  font-size: 1.2em;
+}
+
+.chef-info {
+  display: flex;
+  align-items: center;
+}
+
+.chef-info img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  color: #666;
+}
+
+.sample {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px; /* Add some padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+}
+
+.sample h3 {
+  color: #1955d6; /* Dark text color for the heading */
+  font-size: 1.2em; /* Larger font size for the heading */
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.sample p {
+  color: #28d152; /* Slightly darker text color for the paragraph */
+  font-size: 1em; /* Normal font size for the paragraph */
+  line-height: 1.5; /* Increase line height for better readability */
+}
