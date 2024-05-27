@@ -1,139 +1,71 @@
 <ul class="cards">
-    <li>
-      <a href="" class="card">
-        <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-              <path />
-            </svg>
+  <li>
+    <a href="" class="card">
+      <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+            <path />
+          </svg>
+          <div class="wrap">
+            <a routerLink="/list"><button class="button">View More</button></a>
+          </div>
+        </div>
+        <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+            <path />
+          </svg>
+          <div class="card__header-text">
             <div class="wrap">
               <a routerLink="/list"><button class="button">View More</button></a>
             </div>
           </div>
-          <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
         </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-              <path />
-            </svg>
-            <div class="card__header-text">
-              <div class="wrap">
-                <a routerLink="/list"><button class="button">View More</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-              <path />
-            </svg>
-            <div class="card__header-text">
-              <div class="wrap">
-                <a routerLink="/list"><button class="button">View More</button></a>
-              </div>
-            </div>
-          </div>
-          <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-              <path />
-            </svg>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+            <path />
+          </svg>
+          <div class="card__header-text">
             <div class="wrap">
-            <a routerLink="/list"><button class="button">View More</button></a>  
+              <a routerLink="/list"><button class="button">View More</button></a>
             </div>
           </div>
-          <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
         </div>
-      </a>
-    </li>
-  </ul>
-
-  <!-- <div *ngIf="foodData">
-    <h1>Food Information</h1>
-    <div *ngFor="let item of foodData.hints">
-      <h2>{{ item.food.label }}</h2>
-      <img [src]="item.food.image" alt="{{ item.food.label }}">
-      <p>Known As: {{ item.food.knownAs }}</p>
-      <p>Category: {{ item.food.category }}</p>
-      <p>Calories: {{ item.food.nutrients.ENERC_KCAL }}</p>
-      <p>Protein: {{ item.food.nutrients.PROCNT }}</p>
-      <p>Fat: {{ item.food.nutrients.FAT }}</p>
-      <p>Carbs: {{ item.food.nutrients.CHOCDF }}</p>
-      <p>Fiber: {{ item.food.nutrients.FIBTG }}</p>
-    </div>
-  </div> -->
-
-  <div>
-    <input [(ngModel)]="query" placeholder="Search for food items" />
-    <button (click)="fetchFoodData()">Search</button>
-  </div>
-  
-  <div *ngIf="foodData">
-    <h1>Food Information</h1>
-    <div *ngIf="foodData.parsed && foodData.parsed.length">
-      <h2>Parsed Data</h2>
-      <div *ngFor="let item of foodData.parsed">
-
-        <a href="" class="card">
-          <!-- <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" /> -->
-          <img class="card__image" [src]="item.food.image" alt="{{ item.food.label }}">
-          <div class="card__overlay">
-            <div class="card__header">
-              <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg> -->
-
-              <h3>{{ item.food.label }}</h3>
-              <!-- <img [src]="item.food.image" alt="{{ item.food.label }}"> -->
-              <p>Known As: {{ item.food.knownAs }}</p>
-              <p>Category: {{ item.food.category }}</p>
-              <p>Calories: {{ item.food.nutrients.ENERC_KCAL }}</p>
-              <p>Protein: {{ item.food.nutrients.PROCNT }}</p>
-              <p>Fat: {{ item.food.nutrients.FAT }}</p>
-              <p>Carbs: {{ item.food.nutrients.CHOCDF }}</p>
-              <p>Fiber: {{ item.food.nutrients.FIBTG }}</p>
-              <div class="wrap">
-              <a routerLink="/list"><button class="button">View More</button></a>  
-              </div>
-            </div>
-            <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
+        <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../../assets/img/recipe-1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+            <path />
+          </svg>
+          <div class="wrap">
+           <button class="button" value="abcd">View More</button>
           </div>
-        </a>
+        </div>
+        <!-- <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p> -->
       </div>
-    </div>
-    <div *ngIf="foodData.hints && foodData.hints.length">
-      <h2>Hints</h2>
-      <div *ngFor="let item of foodData.hints">
-        <h3>{{ item.food.label }}</h3>
-        <img [src]="item.food.image" alt="{{ item.food.label }}">
-        <p>Known As: {{ item.food.knownAs }}</p>
-        <p>Category: {{ item.food.category }}</p>
-        <p>Calories: {{ item.food.nutrients.ENERC_KCAL }}</p>
-        <p>Protein: {{ item.food.nutrients.PROCNT }}</p>
-        <p>Fat: {{ item.food.nutrients.FAT }}</p>
-        <p>Carbs: {{ item.food.nutrients.CHOCDF }}</p>
-        <p>Fiber: {{ item.food.nutrients.FIBTG }}</p>
-      </div>
-    </div>
-  </div>
-  
+    </a>
+  </li>
+</ul>
+
+<app-recipes-list></app-recipes-list>
