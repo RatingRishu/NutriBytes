@@ -102,6 +102,7 @@ body {
   margin: 10px;
   max-width: 300px;
   text-align: center;
+  background-color: #e4e6e5;
 }
 
 .card__image {
@@ -196,3 +197,5 @@ body {
   font-size: 1em; /* Normal font size for the paragraph */
   line-height: 1.5; /* Increase line height for better readability */
 }
+
+
