@@ -27,7 +27,8 @@
         <button class="btn">Add to Cart</button>
       </div>
       <p class="description">
-        It provides highly precise and detailed information regarding the protein content offered by particular foods.</p>
+        It provides highly precise and detailed information regarding the protein content offered by particular foods.
+      </p>
     </div>
   </div>
 </section>
@@ -40,18 +41,16 @@
         class="card__image">
       <div class="card__overlay">
         <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-            <path />
-          </svg>
+
           <div class="wrap">
-            <h2>{{ item.food.label }}</h2>
-            <p>Known As: {{ item.food.knownAs }}</p>
-            <p>Category: {{ item.food.category }}</p>
-            <p>Calories: {{ item.food.nutrients.ENERC_KCAL | number}}</p>
-            <p>Protein: {{ item.food.nutrients.PROCNT | number}}</p>
-            <p>Fat: {{ item.food.nutrients.FAT | number}}</p>
-            <p>Carbs: {{ item.food.nutrients.CHOCDF | number}}</p>
-            <p>Fiber: {{ item.food.nutrients.FIBTG | number}}</p>
+            <h3>{{ item.food.label }}</h3>
+            <!-- <p class="typing">Known As: {{ item.food.knownAs }}</p> -->
+            <!-- <p class="typing">Category: {{ item.food.category }}</p> -->
+            <p class="typing">Calories: {{ item.food.nutrients.ENERC_KCAL | number}}</p>
+            <p class="typing">Protein: {{ item.food.nutrients.PROCNT | number}}</p>
+            <p class="typing">Fat: {{ item.food.nutrients.FAT | number}}</p>
+            <p class="typing">Carbs: {{ item.food.nutrients.CHOCDF | number}}</p>
+            <p class="typing">Fiber: {{ item.food.nutrients.FIBTG | number}}</p>
           </div>
         </div>
       </div>

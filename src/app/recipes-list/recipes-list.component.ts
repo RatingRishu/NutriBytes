@@ -15,6 +15,7 @@ export class RecipesListComponent implements OnInit, OnChanges {
   foodItemData: any;
   query: string = '';
   name: string ='';
+  img: string='';
   @Input() item: string = '';
 
   constructor(private nutriService: NutriServiceService) { }
