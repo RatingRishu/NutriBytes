@@ -1,6 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges, AfterViewInit } from '@angular/core';
 import { NutriServiceService } from '../nutri-service.service';
-import { Pie } from '@antv/g2plot';
 
 @Component({
   selector: 'app-recipes-list',
