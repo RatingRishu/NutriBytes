@@ -85,8 +85,8 @@ body {
 .wrap p {
   display: flex;
   justify-content: space-evenly;
-  margin: 5px 0;
-  /* border: 2px solid rgb(127, 206, 131); */
+  margin: 2px 0;
+  border: 1px solid rgb(41, 43, 41);
 }
 
 .dish-details {
@@ -185,5 +185,5 @@ body {
 /* Optional: Adjust the font and styling */
 .typing {
   font-family: monospace; /* Use a monospace font for a typewriter effect */
-  font-size: 24px;
+  font-size: 14px;
 }

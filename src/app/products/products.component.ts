@@ -17,7 +17,7 @@ export class ProductsComponent {
   paneer: string = 'paneer';
   rice: string = 'rice';
   potatoChips: string = 'potato chips';
-  starbucks: string = 'Starbucks';
+  eggs: string = 'eggs';
 
 
   constructor(private nutriService: NutriServiceService) {
