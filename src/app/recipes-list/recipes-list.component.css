@@ -54,7 +54,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 10px;
-  max-width: 300px;
+  max-width: 250px;
   text-align: center;
   background-color: #e4e6e5;
 }
