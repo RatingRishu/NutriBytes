@@ -36,7 +36,7 @@
 <div *ngIf="foodData" >
   <h1>Food Information for -: {{ query | uppercase }}</h1>
   <div class="card-container">
-    <div *ngFor="let item of foodData.hints" class="card" (click)="togglePopup()">
+    <div *ngFor="let item of foodData.hints" class="card" (click)="togglePopup(item)">
       <img [src]="item.food.image ? item.food.image : '../../assets/img/logo.png'" alt="Loading...."
         class="card__image">
       <div class="card__overlay">
@@ -56,6 +56,4 @@
     </div>
   </div>
 </div>
-<app-details-popup [(isVisible)]="isPopupVisible">
-
-</app-details-popup>
+<app-details-popup [(isVisible)]="isPopupVisible" [foodItem]="selectedFoodItem"></app-details-popup>

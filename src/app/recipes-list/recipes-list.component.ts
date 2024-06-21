@@ -16,6 +16,7 @@ export class RecipesListComponent implements OnInit, OnChanges {
   name: string = '';
   img: string = '';
   isPopupVisible = false;
+  selectedFoodItem: any;
 
   @Input() item: string = '';
 
@@ -32,7 +33,8 @@ export class RecipesListComponent implements OnInit, OnChanges {
   ngOnInit(): void {
   }
 
-  togglePopup() {
+  togglePopup(item: any) {
+    this.selectedFoodItem = item;
     this.isPopupVisible = !this.isPopupVisible;
   }
 
