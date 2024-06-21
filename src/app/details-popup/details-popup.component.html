@@ -16,19 +16,24 @@
                             {{ foodItem.food.category ? foodItem.food.category : 'Unknown Brand' }} <br>
                             {{ foodItem.food.label }}
                         </h1>
-                        <p class="typing">Calories: {{ foodItem.food.nutrients.ENERC_KCAL | number}}</p>
-                        <p class="typing">Protein: {{ foodItem.food.nutrients.PROCNT | number}}</p>
-                        <p class="typing">Fat: {{ foodItem.food.nutrients.FAT | number}}</p>
-                        <p class="typing">Carbs: {{ foodItem.food.nutrients.CHOCDF | number}}</p>
-                        <p class="typing">Fiber: {{ foodItem.food.nutrients.FIBTG | number}}</p>
+
+
+                        <div class="wrap">
+                            <div class="in">
+                                <h3 class="typing">Calories: {{ foodItem.food.nutrients.ENERC_KCAL | number}}</h3>
+                                <h3 class="typing">Protein: {{ foodItem.food.nutrients.PROCNT | number}}</h3>
+                                <h3 class="typing">Fat: {{ foodItem.food.nutrients.FAT | number}}</h3>
+                                <h3 class="typing">Carbs: {{ foodItem.food.nutrients.CHOCDF | number}}</h3>
+                                <h3 class="typing">Fiber: {{ foodItem.food.nutrients.FIBTG | number}}</h3>
+                            </div>
+                        </div>
                         <!-- <canvas id="nutritionChart" width="400" height="400"></canvas> -->
                         <h6 style="color: white">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit jdk jd . Reiciendis sequi corporis
                             minima maxime vel amet inventore tempore ea nostrum quaerat.
                         </h6>
-                        <h2>${{ foodItem.food.price ? foodItem.food.price : 'N/A' }}</h2>
-
-                        <button class="btn btn-outline-success btn-lg mt-5">Add To Cart</button>
+                        <!-- <h2>${{ foodItem.food.price ? foodItem.food.price : 'N/A' }}</h2>
+                        <button class="btn btn-outline-success btn-lg mt-5">Add To Cart</button> -->
                     </div>
                 </div>
             </div>

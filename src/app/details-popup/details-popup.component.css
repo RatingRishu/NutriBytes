@@ -46,7 +46,7 @@
     height: 100%;
 }
 
-.details > div {
+.details>div {
     flex: 1;
 }
 
@@ -60,6 +60,27 @@
 .detaildesc h6 {
     margin-top: 25px;
 }
+
 .popup img {
     width: 95%;
 }
+div.wrap {
+    width:512px;margin:64px auto 0;
+    background: linear-gradient( to right ,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 255, 0, 1) 15%,
+          rgba(0, 255, 0, 1) 30%,
+          rgba(0, 255, 255, 1) 50%,
+          rgba(0, 0, 255, 1) 65%,
+          rgba(255, 0, 255, 1) 80%,
+          rgba(255, 0, 0, 1) 100%);
+    padding:2px;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.8);
+  }
+  div.in {
+    background:white;
+    padding:8px;
+    text-align:center;
+    font-family:Arial;
+    font-weight:bold;
+  }
