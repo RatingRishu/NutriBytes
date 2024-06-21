@@ -13,8 +13,10 @@ export class RecipesListComponent implements OnInit, OnChanges {
   foodData: any;
   foodItemData: any;
   query: string = '';
-  name: string ='';
-  img: string='';
+  name: string = '';
+  img: string = '';
+  isPopupVisible = false;
+
   @Input() item: string = '';
 
   constructor(private nutriService: NutriServiceService) { }
@@ -22,12 +24,16 @@ export class RecipesListComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['item'] && changes['item'].currentValue) {
       this.query = this.item;
-      
+
       this.fetchFoodData();
-      
+
     }
   }
   ngOnInit(): void {
+  }
+
+  togglePopup() {
+    this.isPopupVisible = !this.isPopupVisible;
   }
 
   fetchFoodData(): void {
