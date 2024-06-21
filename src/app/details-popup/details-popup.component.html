@@ -1,29 +1,38 @@
 <div class="popup" *ngIf="isVisible">
     <div class="popup-content">
-      <span class="close-btn" (click)="closePopup()">&times;</span>
-      <div class="mt-0">
-        <div class="details row g-0 text-center m-5 border border-primary rounded">
-          <div class="col-12 col-md-6">
-            <img [src]="foodItem.food.image ? foodItem.food.image : '../../assets/img/logo.png'" class="card-img-top w-100 h-100" alt="...">
-          </div>
-          <div class="detaildesc col-12 col-md-6">
-            <div>
-              <h3>
-                <p class="text-muted">{{ foodItem.food.label }}</p>
-              </h3>
-              <h1>
-                {{ foodItem.food.category ? foodItem.food.category : 'Unknown Brand' }} <br> 
-                {{ foodItem.food.label }}
-              </h1>
-              <h6>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit jdk jd . Reiciendis sequi corporis minima maxime vel amet inventore tempore ea nostrum quaerat.
-              </h6>
-              <h2>${{ foodItem.food.price ? foodItem.food.price : 'N/A' }}</h2>
-              <button class="btn btn-outline-success btn-lg mt-5">Add To Cart</button>
+        <span class="close-btn" (click)="closePopup()">&times;</span>
+        <div class="mt-0">
+            <div class="details row g-0 text-center m-5 border border-primary rounded">
+                <div class="col-12 col-md-6">
+                    <img [src]="foodItem.food.image ? foodItem.food.image : '../../assets/img/logo.png'"
+                        class="card-img-top w-100 h-100" alt="...">
+                </div>
+                <div class="detaildesc col-12 col-md-6">
+                    <div>
+                        <h3>
+                            <p class="text-muted">{{ foodItem.food.label }}</p>
+                        </h3>
+                        <h1>
+                            {{ foodItem.food.category ? foodItem.food.category : 'Unknown Brand' }} <br>
+                            {{ foodItem.food.label }}
+                        </h1>
+                        <p class="typing">Calories: {{ foodItem.food.nutrients.ENERC_KCAL | number}}</p>
+                        <p class="typing">Protein: {{ foodItem.food.nutrients.PROCNT | number}}</p>
+                        <p class="typing">Fat: {{ foodItem.food.nutrients.FAT | number}}</p>
+                        <p class="typing">Carbs: {{ foodItem.food.nutrients.CHOCDF | number}}</p>
+                        <p class="typing">Fiber: {{ foodItem.food.nutrients.FIBTG | number}}</p>
+                        <!-- <canvas id="nutritionChart" width="400" height="400"></canvas> -->
+                        <h6 style="color: white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit jdk jd . Reiciendis sequi corporis
+                            minima maxime vel amet inventore tempore ea nostrum quaerat.
+                        </h6>
+                        <h2>${{ foodItem.food.price ? foodItem.food.price : 'N/A' }}</h2>
+
+                        <button class="btn btn-outline-success btn-lg mt-5">Add To Cart</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  
+
+</div>

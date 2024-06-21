@@ -1,0 +1,145 @@
+/* 
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+} */
+
+
+/* Footer Styles */
+.footer {
+    background: url('https://gist.github.com/assets/99909689/c45b0e77-84de-4d46-b03b-26f432b445d7') ;
+    background-size: cover;
+    position: relative;
+    /* padding: 20px 0; */
+    border-top: 1px solid #e7e7e7;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+

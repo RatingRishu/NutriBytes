@@ -10,6 +10,7 @@ import { RecipesListComponent } from './recipes-list/recipes-list.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsPopupComponent } from './details-popup/details-popup.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { BlogsComponent } from './blogs/blogs.component';
     RecipesListComponent,
     HomeComponent,
     DetailsPopupComponent,
-    BlogsComponent
+    BlogsComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
