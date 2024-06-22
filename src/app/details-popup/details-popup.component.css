@@ -1,4 +1,4 @@
-.popup {
+/* .popup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,4 +83,132 @@ div.wrap {
     text-align:center;
     font-family:Arial;
     font-weight:bold;
-  }
+  } */
+
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    min-width: 300px;
+    max-width: 90%; /* Ensure the popup does not exceed screen width */
+    margin: 15px;
+    /* margin-left: 15%; */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.detaildesc {
+    margin-left: 0 !important;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 80%;
+    height: 70%;
+}
+
+.details > div {
+    flex: 1;
+    min-width: 50%; /* Ensure columns are 50% width on smaller screens */
+    box-sizing: border-box;
+}
+
+.detaildesc h1 {
+    margin-top: 50px;
+    text-align: left;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.detaildesc h6 {
+    margin-top: 25px;
+}
+
+.popup img {
+    width: 95%;
+}
+
+.wrap {
+    width: 100%;
+    margin: 16px auto 0;
+    background: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    padding: 2px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.in {
+    background: white;
+    padding: 8px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .popup-content {
+        min-width: 90%; /* Use most of the screen width */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .details {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .details > div {
+        min-width: 100%; /* Full width for columns on mobile */
+    }
+
+    .detaildesc {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .detaildesc h1, .detaildesc h6 {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .wrap {
+        width: 100%;
+        margin: 16px auto 0; /* Adjust margin for mobile */
+    }
+}
