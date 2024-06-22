@@ -152,3 +152,37 @@
     color: #fff;
     transform: translateY(-7px);
   }
+
+  /* back to menu styling */
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh;  */
+    margin: 30px;
+  }
+  
+  .back-to-menu-button {
+    background-color: #ff6f61; /* A warm, attractive color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for spacing */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .back-to-menu-button:hover {
+    background-color: #ff3b2f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .back-to-menu-button:active {
+    background-color: #e64a45; /* Even darker shade when clicked */
+    transform: scale(0.95); /* Slightly smaller when clicked */
+  }
+  
+  

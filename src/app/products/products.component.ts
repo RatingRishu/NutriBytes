@@ -18,6 +18,7 @@ export class ProductsComponent {
   rice: string = 'rice';
   potatoChips: string = 'potato chips';
   eggs: string = 'eggs';
+  showCard : boolean = true;
 
 
   constructor(private nutriService: NutriServiceService) {
@@ -44,7 +45,12 @@ export class ProductsComponent {
 
   onView(item:any) {
     this.foodItemData = item;
+    this.showCard = false;
     console.log(this.foodItemData);
+  }
+
+  backToMenu() {
+    this.showCard = true;
   }
 
 }

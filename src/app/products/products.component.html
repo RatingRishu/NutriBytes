@@ -1,4 +1,8 @@
-<ul class="cards">
+<div class="button-container" *ngIf="!showCard">
+  <button class="back-to-menu-button" (click)="backToMenu()">Back to Menu</button>
+</div>
+
+<ul class="cards" *ngIf="showCard">
   <li>
     <div class="card">
       <img src="https://gist.github.com/assets/99909689/49d9f910-8a19-4a05-8548-417f75b966c4" class="card__image" alt="" />
