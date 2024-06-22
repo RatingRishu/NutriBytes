@@ -4,7 +4,12 @@
     <button (click)="fetchFoodData()" class="search-button">Search</button>
   </div>
   <h3>Sample Searches</h3>
-  <p> Burger King chicken wings potato chips Starbucks cake oatmeal fried eggs blueberry pancakes Pizza Hut low fat milk
+  <!-- <p> Burger King chicken wings potato chips Starbucks cake oatmeal fried eggs blueberry pancakes Pizza Hut low fat milk
+  </p> -->
+  <p>
+    <span *ngFor="let item of sampleSearches" (click)="searchSample(item)" class="sample-item">
+      {{ item }}
+    </span>
   </p>
 </div>
 

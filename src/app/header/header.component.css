@@ -9,27 +9,42 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 2;
+ 
 }
 
+
 header {
+  position: relative; /* Ensure that the absolute positioning of the logo works within the header */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: paleturquoise;
+  border-radius: 25px;
+  height: 150px; /* Fixed height for the header */
+  overflow: visible; /* Allow content to overflow the header if necessary */
+  
+  /* background: url('https://gist.github.com/assets/99909689/2bef9e46-e994-46e3-84a2-3fecf6e1c41a') no-repeat center center;
+  background-size: cover;
+  background-position: center 70%;
+  position: relative;
+  border-radius: 25px; */
 }
 
 .logo {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for center alignment */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo img {
-  width: 100px;
+  width: 150px; /* Increased size for the logo */
+  height: auto; /* Ensure the aspect ratio is maintained */
   margin-right: 10px;
 }
-
 nav ul {
   font-size: x-large;
   font-family: cursive;
@@ -62,6 +77,8 @@ body {
   overflow: hidden;
   color: #fff;
   padding: 50px 0;
+  border-radius: 25px;
+  margin-top: 5px;
 }
 
 .hero .container {

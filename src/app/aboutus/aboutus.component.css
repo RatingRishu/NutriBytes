@@ -1,78 +1,7 @@
-/* 
-.footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    border-top: 1px solid #e7e7e7;
-    margin-top: 50px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
-}
-
-.footer-section h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.footer-section p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #666;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin: 5px 0;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 14px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #e7e7e7;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-} */
-
-
-/* Footer Styles */
-.footer {
-    background: url('https://gist.github.com/assets/99909689/c45b0e77-84de-4d46-b03b-26f432b445d7') ;
+ .footer {
+    background: url('https://gist.github.com/assets/99909689/c45b0e77-84de-4d46-b03b-26f432b445d7');
     background-size: cover;
     position: relative;
-    /* padding: 20px 0; */
     border-top: 1px solid #e7e7e7;
     margin-top: 50px;
     font-family: Arial, sans-serif;
@@ -124,7 +53,7 @@
 .footer-links a {
     text-decoration: none;
     color: #007bff;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 .footer-links a:hover {
@@ -143,3 +72,38 @@
     color: #ddd;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

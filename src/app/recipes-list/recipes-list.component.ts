@@ -17,7 +17,10 @@ export class RecipesListComponent implements OnInit, OnChanges {
   img: string = '';
   isPopupVisible = false;
   selectedFoodItem: any;
-
+  sampleSearches: string[] = [
+    'Burger King', 'chicken wings', 'potato chips', 'Starbucks', 'cake',
+    'oatmeal', 'fried eggs', 'blueberry pancakes', 'Pizza Hut', 'low fat milk'
+  ];
   @Input() item: string = '';
 
   constructor(private nutriService: NutriServiceService) { }
@@ -44,5 +47,9 @@ export class RecipesListComponent implements OnInit, OnChanges {
         this.foodData = data;
       });
     }
+  }
+  searchSample(item: string): void {
+    this.query = item;
+    this.fetchFoodData();
   }
 }

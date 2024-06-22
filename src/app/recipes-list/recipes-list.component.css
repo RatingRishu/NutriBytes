@@ -182,10 +182,23 @@ body {
   animation: typing 4s steps(40, end) 1, blink 0.75s step-end 4s; /* Apply animations */
 }
 
-/* Optional: Adjust the font and styling */
 .typing {
-  font-family: monospace; /* Use a monospace font for a typewriter effect */
+  font-family: monospace; 
   font-size: 14px;
+}
+
+.sample-item {
+  cursor: pointer; 
+  color: #007bff;
+  margin-right: 10px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.sample-item:hover {
+  color: #0056b3;
+  text-decoration: none; 
+  font-size: 22px;
 }
 
 
