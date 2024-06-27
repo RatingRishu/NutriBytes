@@ -1,4 +1,4 @@
-# NutriBytes
+# NutriBytes 🍏
 
 **Welcome to NutriBytes! With NutriBytes, users can easily explore the nutritional content of their favorite foods, helping them make informed dietary choices. Whether you're a health enthusiast, dietician, or just curious about what you eat, NutriBytes has got you covered.**
 
