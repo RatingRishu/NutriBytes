@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "NutriBytes:build:production"
+              "buildTarget": "NutriBytes:build:production"
             },
             "development": {
-              "browserTarget": "NutriBytes:build:development"
+              "buildTarget": "NutriBytes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NutriBytes:build"
+            "buildTarget": "NutriBytes:build"
           }
         },
         "test": {
